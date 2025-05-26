@@ -1,0 +1,264 @@
+*{
+    font-family: 'Open sans', sans-serif;
+    font-weight: 400;
+}
+
+
+header {
+    position: relative;
+    height: 250px;
+    width: 100vw;
+    border-bottom: 1px solid black;
+    box-sizing: border-box;
+}
+
+.myname {
+    position: absolute;
+    bottom: 70px;
+    left: 30px;
+    font-family: 'Syne', sans-serif;
+    font-weight: 700;
+    font-size: 40px;
+}
+
+.tags{
+    position: absolute;
+    bottom: 5px;
+    left: 30px;
+    font-size: 15px;
+    font-family: 'Syne';
+    font-weight: lighter;
+}
+
+.nav {
+    position: absolute;
+    top: 20px;
+    right: 50px;
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+}
+
+.navtext {
+    color: black;
+    font-size: 15px;
+}
+
+.navtext:hover{
+    text-decoration: underline;
+    color: black;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+
+.aboutmesection{
+    position:relative;
+    height: 700px;
+    width: 100vw;
+    margin: 0%;
+    display: flex;
+    border-bottom: 1px solid black;
+    align-items: center;
+    background-color: white;
+}
+
+.profilepic{
+    padding-left: 200px;
+}
+
+.profileimg{
+    border-radius: 10px;
+}
+
+.aboutmebox{
+    width: 500px;
+    padding-left: 100px;
+}
+
+.aboutmetext{
+    font-size: 20px;
+    color: black;
+    line-height: 1.5;
+}
+
+
+.education, .work {
+    height: 350px;
+    width: 50%;
+    margin: auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.education{
+    border-bottom: 1px solid black;
+}
+
+.work{
+    padding-bottom: 50px;
+}
+.education h2, .work h2 {
+    font-family: 'Syne', sans-serif;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+ul {
+    font-size: 15px;
+    color: black;
+    list-style-type: none;
+    margin: 0; 
+    padding: 0; 
+}
+
+p {
+    font-size: 10px;
+    color: black;
+}
+
+.st{
+    display: flex;
+    flex-direction: row;
+    height: 300px;
+    width: 100%;
+    padding-bottom: 50px;
+}
+
+.skills, .tools {
+    display: flex;
+    width: 50%;
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s ease;
+}
+
+.skillstext ul,
+.toolstext ul {
+    color: black;
+    text-align: left;
+    line-height: 1.5;
+    transition: color 0.3s ease;
+}
+
+.skillstext h4,
+.toolstext h4 {
+    color: black;
+    font-family: 'Syne', sans-serif;
+    font-weight: 700;
+    transition: color 0.3s ease;
+}
+
+.skills:hover,
+.tools:hover {
+    background-color: black;
+}
+
+.skills:hover .skillstext ul,
+.skills:hover .skillstext h4,
+.tools:hover .toolstext ul,
+.tools:hover .toolstext h4 {
+    color: white;
+}
+
+.projects{
+    height: 800px;
+}
+
+.projects h2{
+    font-family: 'Syne', sans-serif;
+    font-weight: 700;
+    margin-left: 30px;
+    margin-top: 100px;
+}
+
+.pbox{
+    display: flex;
+    flex-direction: row;
+    gap: 70px;
+    justify-content: center;
+}
+
+.p1 h4,
+.p2 h4,
+.p3 h4{
+    font-family: 'Syne', sans-serif;
+    font-weight: 700;
+    font-size: 15px;
+    margin: 0;
+    margin-top: 20px;
+
+}
+
+.p1,
+.p1 u,
+.p2,
+.p2 u,
+.p3,
+.p3 u {
+    font-size: 10px;
+    font-family: 'Syne';
+    font-weight: lighter;
+}
+
+.p1, .p2, .p3{
+
+    padding-top: 100px;
+}
+
+.p1img, .p2img, .p3img {
+    transition: transform 0.3s ease;
+    display: block;
+    margin: auto;
+}
+
+.p1img:hover,
+.p2img:hover,
+.p3img:hover {
+    transform: scale(1.1);
+}
+
+.testimonial{
+    padding-top: 100px;
+    justify-items: center;
+    text-align: center;
+    margin: 0 auto;
+    width: 50%;
+}
+
+.contact {
+    background-color: black;
+    height: 300px;
+    width: 100vw;
+    position: absolute;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+}
+
+.contacttext {
+    font-size: 15px;
+    color: white;
+    text-align: left;       
+    display: flex;
+    flex-direction: column;
+    gap: 8px;                
+    padding-right: 100px;   
+}
+
+.contacttext h4{
+    font-family: 'Syne', sans-serif;
+    font-weight: 700;
+}
+
+.contacttext a {
+    color: white;
+    text-decoration: underline;
+}
