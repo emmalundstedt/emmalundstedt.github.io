@@ -167,33 +167,50 @@ p {
     color: white;
 }
 
-.projects{
-    height: 800px;
+.projects {
+    height: 1200px;
 }
 
-.projects h2{
+.projects h2 {
     font-family: 'Syne', sans-serif;
     font-weight: 700;
     margin-left: 30px;
     margin-top: 100px;
 }
 
-.pbox{
+.pbox {
     display: flex;
     flex-direction: row;
     gap: 70px;
     justify-content: center;
+    flex-wrap: wrap;
+}
+
+.pgroup {
+    display: flex;
+    flex-direction: column;
+    gap: 40px; 
+}
+
+.p1, .p2, .p3, .p4 {
+    padding-top: 100px;
+    text-align: center;
+    max-width: 350px;
+}
+
+.p4{
+    padding-top: 0px;
 }
 
 .p1 h4,
 .p2 h4,
-.p3 h4{
+.p3 h4,
+.p4 h4 {
     font-family: 'Syne', sans-serif;
     font-weight: 700;
     font-size: 15px;
     margin: 0;
     margin-top: 20px;
-
 }
 
 .p1,
@@ -201,18 +218,15 @@ p {
 .p2,
 .p2 u,
 .p3,
-.p3 u {
+.p3 u,
+.p4,
+.p4 u {
     font-size: 10px;
-    font-family: 'Syne';
+    font-family: 'Syne', sans-serif;
     font-weight: lighter;
 }
 
-.p1, .p2, .p3{
-
-    padding-top: 100px;
-}
-
-.p1img, .p2img, .p3img {
+.p1img, .p2img, .p3img, .p4img {
     transition: transform 0.3s ease;
     display: block;
     margin: auto;
@@ -220,7 +234,8 @@ p {
 
 .p1img:hover,
 .p2img:hover,
-.p3img:hover {
+.p3img:hover,
+.p4img:hover {
     transform: scale(1.1);
 }
 
@@ -262,3 +277,46 @@ p {
     color: white;
     text-decoration: underline;
 }
+
+
+.photography-page{
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    text-align: center;
+  }
+
+  .music {
+    height: 30px;
+    width: 100vw; 
+}
+
+  
+  h1 {
+    padding: 20px;
+    color: white;
+    font-family: 'Syne', sans-serif;
+    font-weight: 700;
+  }
+  
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 15px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .gallery img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .gallery img:hover {
+    transform: scale(1.02);
+    opacity: 40%;
+  }
